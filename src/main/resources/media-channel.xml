@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<root>
+		<media-channels>
+			<media-channel>
+				<channel-id>chan_1</channel-id>
+				<media-channel-source>
+					<source-node>10.249.128.27:34111</source-node>
+					<source-interface>client_0</source-interface>
+				</media-channel-source>
+				<media-channel-destination>
+					<destination-node>10.249.128.91:34111</destination-node>
+					<destination-interface>client_0</destination-interface>
+				</media-channel-destination>
+				<effective-freq-slot>
+					<N>48</N>
+					<M>2</M>
+				</effective-freq-slot>
+				<link-channel>
+					<link-id>10.249.128.27:34111:N0-10.249.128.91:34111:N0</link-id>
+					<N>48</N>
+					<M>2</M>
+					<source-node>10.249.128.27:34111</source-node>
+					<source-port>network_line_0</source-port>
+					<destination-node>10.249.128.91:34111</destination-node>
+					<destination-port>network_line_0</destination-port>
+					<link>10.249.128.27:34111:N0-10.249.128.91:34111:N0</link>
+					<bidirectional>true</bidirectional>
+				</link-channel>
+			</media-channel>
+		</media-channels>
+		<light-path-channels>
+			<light-path-channel>
+				<lp-channel-id>def_config</lp-channel-id>
+				<light-path-source>
+					<source-node>def_config</source-node>
+					<source-interface>def_config </source-interface>
+				</light-path-source>
+				<light-path-destination>
+					<destination-node>def_config</destination-node>
+					<destination-interface>def_config </destination-interface>
+				</light-path-destination>
+				<effective-freq-slot>
+					<N>def_config</N>
+					<M>def_config </M>
+				</effective-freq-slot>
+				<link-channel>
+					<link-id>def_config</link-id>
+					<N>def_config</N>
+					<M>def_config</M>
+					<source-node>def_config</source-node>
+					<source-port>def_config</source-port>
+					<destination-node>def_config</destination-node>
+					<destination-port>def_config</destination-port>
+					<link>def_config</link>
+					<bidirectional>def_config </bidirectional>
+				</link-channel>
+			</light-path-channel>
+		</light-path-channels>
+	</root>
+	

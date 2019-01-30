@@ -1,0 +1,52 @@
+[
+	{
+		"name": "Node1",
+		"address": "10.249.128.27",
+		"line-cards": [
+			{
+				"name": "FlexTransponder1",
+				"type": "transponder",
+				"TCPport": "34111",
+				"ports": [
+					{
+						"client_ports": [
+							"C0",
+							"C1",
+							"C2",
+							"C3"
+						],
+						"network_ports": [
+							"N0",
+							"N1"
+						]
+					}
+				]
+			}	
+		]
+	},
+	{
+		"name": "Node2",
+		"address": "10.249.128.91",
+		"line-cards": [
+			{
+				"name": "FlexTransponder1",
+				"type": "transponder",
+				"TCPport": "34111",
+				"ports": [
+					{
+						"client_ports": [
+							"C0",
+							"C1",
+							"C2",
+							"C3"
+						],
+						"network_ports": [
+							"N0",
+							"N1"
+						]
+					}
+				]
+			}	
+		]
+	}
+]

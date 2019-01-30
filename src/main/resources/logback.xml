@@ -1,0 +1,28 @@
+<configuration>
+
+	<appender name="netDriver-logs" class="ch.qos.logback.core.FileAppender">
+		<file>logs/netDriver.log</file>
+		<append>false</append>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%X{akkaTimestamp} %-5level %X{akkaSource} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+
+
+	<logger name="400Gflex" level="DEBUG" additivity="false">
+		<appender-ref ref="STDOUT" />
+	</logger>
+
+	<root level="debug">
+		<appender-ref ref="netDriver-logs" />
+		<appender-ref ref="STDOUT" />
+	</root>
+
+</configuration>

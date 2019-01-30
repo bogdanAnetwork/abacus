@@ -1,0 +1,557 @@
+{
+    "network" :[ {
+      "network-types": {"flexi-grid-network" :"flexi-grid-network" },
+      "network-id": "flexi-grid-net_1",
+      "node": [
+        {
+        "node-id": "192.168.101.100:24000",
+		"node-type": "TRANSPONDER",
+        "termination-point": [{
+          "tp-id": "1",
+          "supporting-termination-point": [{
+            "network-ref": "def_config",
+            "node-ref": "def_config",
+            "tp-ref": "def_config "
+          }]
+        }],
+	        "node-config": {
+	          "interfaces" :[
+	            {
+	            "name": "client_1",
+	            "port-number": 2,
+	            "input-port": true,
+	            "output-port": false,
+	            "description": " client 1",
+	            "type": "client-interface",
+	            "client-interface": { "label": 2 },
+	            "available-modulation": null,
+	            "modulation-type": null,
+	            "available-FEC": null,
+	            "FEC-enabled": false,
+	            "FEC-type": null
+	          },
+	          {
+	            "name": "client_2",
+	            "port-number": 3,
+	            "input-port": true,
+	            "output-port": false,
+	            "description": "client 2",
+	            "type": "client-interface",
+	            "client-interface": { "label": 3 },
+	            "available-modulation": null,
+	            "modulation-type": null,
+	            "available-FEC": null,
+	            "FEC-enabled": false,
+	            "FEC-type": null
+	          },
+	          {
+	            "name": "client_3",
+	            "port-number": 4,
+	            "input-port": true,
+	            "output-port": false,
+	            "description": "client 3",
+	            "type": "client-interface",
+	            "client-interface": { "label": 4 },
+	            "available-modulation": null,
+	            "modulation-type": null,
+	            "available-FEC": null,
+	            "FEC-enabled": false,
+	            "FEC-type": null
+	          },{
+	            "name": "client_4",
+	            "port-number": 5,
+	            "input-port": true,
+	            "output-port": false,
+	            "description": "client 4",
+	            "type": "client-interface",
+	            "client-interface": { "label": 5 },
+	            "available-modulation": null,
+	            "modulation-type": null,
+	            "available-FEC": null,
+	            "FEC-enabled": false,
+	            "FEC-type": null
+	          },{
+	            "name": "network_line_0",
+	            "port-number": 0,
+	            "input-port": false,
+	            "output-port": true,
+	            "description": "network 0",
+	            "type": "NETWORK_INTERFACE",
+	            "network-interface": { "label": 0 },
+	            "available-modulation": ["DP_QPSK_CP", "DP_QPSK_I", "DP_8QAM_CP", "DP_8QAM_I", "DP_16QAM_CP", "DP_16QAM_I", "DC_DP_16QAM"],
+				"modulation-type": "DP_QPSK_I",
+	            "available-FEC": ["_15_SD", "_15_OV", "_25"],
+	            "FEC-enabled": true,
+	            "FEC-type": "_15_SD"
+	          },{
+	            "name": "network_line_1",
+	            "port-number": 1,
+	            "input-port": false,
+	            "output-port": true,
+	            "description": "network 1",
+	            "type": "NETWORK_INTERFACE",
+	            "network-interface": { "label": 1 },
+	            "available-modulation": ["DP_QPSK_CP", "DP_QPSK_I", "DP_8QAM_CP", "DP_8QAM_I", "DP_16QAM_CP", "DP_16QAM_I", "DC_DP_16QAM"],
+				"modulation-type": "DP_QPSK_I",
+	            "available-FEC": ["_15_SD", "_15_OV", "_25"],
+	            "FEC-enabled": true,
+	            "FEC-type": "_15_SD"
+	          }
+	          ],
+	          "connections": [
+	          {
+	            "input-port-id": 2,
+	            "output-port-id": 0
+	          },{
+	            "input-port-id": 3,
+	            "output-port-id": 0
+	          },{
+	            "input-port-id": 4,
+	            "output-port-id": 1
+	          },{
+	            "input-port-id": 5,
+	            "output-port-id": 1
+	          }
+	      	]
+	       }
+      	},{
+        "node-id": "192.168.101.101:24000",
+		"node-type": "TRANSPONDER",
+        "termination-point": [{
+          "tp-id": "1",
+          "supporting-termination-point": [{
+            "network-ref": "def_config",
+            "node-ref": "def_config",
+            "tp-ref": "def_config "
+          }]
+        }],
+	        "node-config": {
+	          "interfaces" :[
+	            {
+	            "name": "client_1",
+	            "port-number": 2,
+	            "input-port": true,
+	            "output-port": false,
+	            "description": " client 1",
+	            "type": "client-interface",
+	            "client-interface": { "label": 2 },
+	            "available-modulation": null,
+	            "modulation-type": null,
+	            "available-FEC": null,
+	            "FEC-enabled": false,
+	            "FEC-type": null
+	          },
+	          {
+	            "name": "client_2",
+	            "port-number": 3,
+	            "input-port": true,
+	            "output-port": false,
+	            "description": "client 2",
+	            "type": "client-interface",
+	            "client-interface": { "label": 3 },
+	            "available-modulation": null,
+	            "modulation-type": null,
+	            "available-FEC": null,
+	            "FEC-enabled": false,
+	            "FEC-type": null
+	          },
+	          {
+	            "name": "client_3",
+	            "port-number": 4,
+	            "input-port": true,
+	            "output-port": false,
+	            "description": "client 3",
+	            "type": "client-interface",
+	            "client-interface": { "label": 4 },
+	            "available-modulation": null,
+	            "modulation-type": null,
+	            "available-FEC": null,
+	            "FEC-enabled": false,
+	            "FEC-type": null
+	          },{
+	            "name": "client_4",
+	            "port-number": 5,
+	            "input-port": true,
+	            "output-port": false,
+	            "description": "client 4",
+	            "type": "client-interface",
+	            "client-interface": { "label": 5 },
+	            "available-modulation": null,
+	            "modulation-type": null,
+	            "available-FEC": null,
+	            "FEC-enabled": false,
+	            "FEC-type": null
+	          },{
+	            "name": "network_line_0",
+	            "port-number": 0,
+	            "input-port": false,
+	            "output-port": true,
+	            "description": "network 0",
+	            "type": "NETWORK_INTERFACE",
+	            "network-interface": { "label": 0 },
+	            "available-modulation": ["DP_QPSK_CP", "DP_QPSK_I", "DP_8QAM_CP", "DP_8QAM_I", "DP_16QAM_CP", "DP_16QAM_I", "DC_DP_16QAM"],
+				"modulation-type": "DP_QPSK_I",
+	            "available-FEC": ["_15_SD", "_15_OV", "_25"],
+	            "FEC-enabled": true,
+	            "FEC-type": "_15_SD"
+	          },{
+	            "name": "network_line_1",
+	            "port-number": 1,
+	            "input-port": false,
+	            "output-port": true,
+	            "description": "network 1",
+	            "type": "NETWORK_INTERFACE",
+	            "network-interface": { "label": 1 },
+	            "available-modulation": ["DP_QPSK_CP", "DP_QPSK_I", "DP_8QAM_CP", "DP_8QAM_I", "DP_16QAM_CP", "DP_16QAM_I", "DC_DP_16QAM"],
+				"modulation-type": "DP_QPSK_I",
+	            "available-FEC": ["_15_SD", "_15_OV", "_25"],
+	            "FEC-enabled": true,
+	            "FEC-type": "_15_SD"
+	          }
+	          ],
+	          "connections": [
+	          {
+	            "input-port-id": 2,
+	            "output-port-id": 0
+	          },{
+	            "input-port-id": 3,
+	            "output-port-id": 0
+	          },{
+	            "input-port-id": 4,
+	            "output-port-id": 1
+	          },{
+	            "input-port-id": 5,
+	            "output-port-id": 1
+	          }
+	      	]
+	       }
+      	},{
+        "node-id": "10.0.0.1",
+		"node-type": "FLEXI_GRID_NODE",
+        "termination-point": [{
+          "tp-id": "1",
+          "supporting-termination-point": [{
+            "network-ref": "def_config",
+            "node-ref": "def_config",
+            "tp-ref": "def_config "
+          }]
+        }],
+			"node-config": {
+	          "interfaces" :[
+	            {
+	            "name": "network_line_0",
+	            "port-number": 0,
+	            "input-port": false,
+	            "output-port": true,
+	            "description": "network 0",
+	            "type": "NETWORK_INTERFACE",
+	            "network-interface": { "label": 0 },
+	            "available-modulation": ["DP_QPSK_CP", "DP_QPSK_I", "DP_8QAM_CP", "DP_8QAM_I", "DP_16QAM_CP", "DP_16QAM_I", "DC_DP_16QAM"],
+				"modulation-type": "DP_QPSK_I",
+	            "available-FEC": ["_15_SD", "_15_OV", "_25"],
+	            "FEC-enabled": true,
+	            "FEC-type": "_15_SD"
+	          },{
+	            "name": "network_line_1",
+	            "port-number": 1,
+	            "input-port": false,
+	            "output-port": true,
+	            "description": "network 1",
+	            "type": "NETWORK_INTERFACE",
+	            "network-interface": { "label": 1 },
+	            "available-modulation": ["DP_QPSK_CP", "DP_QPSK_I", "DP_8QAM_CP", "DP_8QAM_I", "DP_16QAM_CP", "DP_16QAM_I", "DC_DP_16QAM"],
+				"modulation-type": "DP_QPSK_I",
+	            "available-FEC": ["_15_SD", "_15_OV", "_25"],
+	            "FEC-enabled": true,
+	            "FEC-type": "_15_SD"
+	          },
+	          {
+	            "name": "network_line_2",
+	            "port-number": 2,
+	            "input-port": false,
+	            "output-port": true,
+	            "description": "network 2",
+	            "type": "NETWORK_INTERFACE",
+	            "network-interface": { "label": 2 },
+	            "available-modulation": ["DP_QPSK_CP", "DP_QPSK_I", "DP_8QAM_CP", "DP_8QAM_I", "DP_16QAM_CP", "DP_16QAM_I", "DC_DP_16QAM"],
+				"modulation-type": "DP_QPSK_I",
+	            "available-FEC": ["_15_SD", "_15_OV", "_25"],
+	            "FEC-enabled": true,
+	            "FEC-type": "_15_SD"
+	          },{
+	            "name": "network_line_3",
+	            "port-number": 3,
+	            "input-port": false,
+	            "output-port": true,
+	            "description": "network 3",
+	            "type": "NETWORK_INTERFACE",
+	            "network-interface": { "label": 3 },
+	            "available-modulation": ["DP_QPSK_CP", "DP_QPSK_I", "DP_8QAM_CP", "DP_8QAM_I", "DP_16QAM_CP", "DP_16QAM_I", "DC_DP_16QAM"],
+				"modulation-type": "DP_QPSK_I",
+	            "available-FEC": ["_15_SD", "_15_OV", "_25"],
+	            "FEC-enabled": true,
+	            "FEC-type": "_15_SD"
+	          }
+	          ],
+	          "connections": [
+	          {
+	            "input-port-id": 2,
+	            "output-port-id": 0
+	          },{
+	            "input-port-id": 3,
+	            "output-port-id": 0
+	          }
+	      	]
+	       }
+      	},{
+        "node-id": "10.0.0.2",
+		"node-type": "FLEXI_GRID_NODE",
+        "termination-point": [{
+          "tp-id": "1",
+          "supporting-termination-point": [{
+            "network-ref": "def_config",
+            "node-ref": "def_config",
+            "tp-ref": "def_config "
+          }]
+        }],
+			"node-config": {
+	          "interfaces" :[
+	            {
+	            "name": "network_line_0",
+	            "port-number": 0,
+	            "input-port": false,
+	            "output-port": true,
+	            "description": "network 0",
+	            "type": "NETWORK_INTERFACE",
+	            "network-interface": { "label": 0 },
+	            "available-modulation": ["DP_QPSK_CP", "DP_QPSK_I", "DP_8QAM_CP", "DP_8QAM_I", "DP_16QAM_CP", "DP_16QAM_I", "DC_DP_16QAM"],
+				"modulation-type": "DP_QPSK_I",
+	            "available-FEC": ["_15_SD", "_15_OV", "_25"],
+	            "FEC-enabled": true,
+	            "FEC-type": "_15_SD"
+	          },{
+	            "name": "network_line_1",
+	            "port-number": 1,
+	            "input-port": false,
+	            "output-port": true,
+	            "description": "network 1",
+	            "type": "NETWORK_INTERFACE",
+	            "network-interface": { "label": 1 },
+	            "available-modulation": ["DP_QPSK_CP", "DP_QPSK_I", "DP_8QAM_CP", "DP_8QAM_I", "DP_16QAM_CP", "DP_16QAM_I", "DC_DP_16QAM"],
+				"modulation-type": "DP_QPSK_I",
+	            "available-FEC": ["_15_SD", "_15_OV", "_25"],
+	            "FEC-enabled": true,
+	            "FEC-type": "_15_SD"
+	          },
+	          {
+	            "name": "network_line_2",
+	            "port-number": 2,
+	            "input-port": false,
+	            "output-port": true,
+	            "description": "network 2",
+	            "type": "NETWORK_INTERFACE",
+	            "network-interface": { "label": 2 },
+	            "available-modulation": ["DP_QPSK_CP", "DP_QPSK_I", "DP_8QAM_CP", "DP_8QAM_I", "DP_16QAM_CP", "DP_16QAM_I", "DC_DP_16QAM"],
+				"modulation-type": "DP_QPSK_I",
+	            "available-FEC": ["_15_SD", "_15_OV", "_25"],
+	            "FEC-enabled": true,
+	            "FEC-type": "_15_SD"
+	          },{
+	            "name": "network_line_3",
+	            "port-number": 3,
+	            "input-port": false,
+	            "output-port": true,
+	            "description": "network 3",
+	            "type": "NETWORK_INTERFACE",
+	            "network-interface": { "label": 3 },
+	            "available-modulation": ["DP_QPSK_CP", "DP_QPSK_I", "DP_8QAM_CP", "DP_8QAM_I", "DP_16QAM_CP", "DP_16QAM_I", "DC_DP_16QAM"],
+				"modulation-type": "DP_QPSK_I",
+	            "available-FEC": ["_15_SD", "_15_OV", "_25"],
+	            "FEC-enabled": true,
+	            "FEC-type": "_15_SD"
+	          }
+	          ],
+	          "connections": [
+	          {
+	            "input-port-id": 2,
+	            "output-port-id": 0
+	          },{
+	            "input-port-id": 3,
+	            "output-port-id": 0
+	          }
+	      	]
+	       }
+      	},{
+        "node-id": "10.0.0.3",
+		"node-type": "FLEXI_GRID_NODE",
+        "termination-point": [{
+          "tp-id": "1",
+          "supporting-termination-point": [{
+            "network-ref": "def_config",
+            "node-ref": "def_config",
+            "tp-ref": "def_config "
+          }]
+        }],
+			"node-config": {
+	          "interfaces" :[
+	            {
+	            "name": "network_line_0",
+	            "port-number": 0,
+	            "input-port": false,
+	            "output-port": true,
+	            "description": "network 0",
+	            "type": "NETWORK_INTERFACE",
+	            "network-interface": { "label": 0 },
+	            "available-modulation": ["DP_QPSK_CP", "DP_QPSK_I", "DP_8QAM_CP", "DP_8QAM_I", "DP_16QAM_CP", "DP_16QAM_I", "DC_DP_16QAM"],
+				"modulation-type": "DP_QPSK_I",
+	            "available-FEC": ["_15_SD", "_15_OV", "_25"],
+	            "FEC-enabled": true,
+	            "FEC-type": "_15_SD"
+	          },{
+	            "name": "network_line_1",
+	            "port-number": 1,
+	            "input-port": false,
+	            "output-port": true,
+	            "description": "network 1",
+	            "type": "NETWORK_INTERFACE",
+	            "network-interface": { "label": 1 },
+	            "available-modulation": ["DP_QPSK_CP", "DP_QPSK_I", "DP_8QAM_CP", "DP_8QAM_I", "DP_16QAM_CP", "DP_16QAM_I", "DC_DP_16QAM"],
+				"modulation-type": "DP_QPSK_I",
+	            "available-FEC": ["_15_SD", "_15_OV", "_25"],
+	            "FEC-enabled": true,
+	            "FEC-type": "_15_SD"
+	          },
+	          {
+	            "name": "network_line_2",
+	            "port-number": 2,
+	            "input-port": false,
+	            "output-port": true,
+	            "description": "network 2",
+	            "type": "NETWORK_INTERFACE",
+	            "network-interface": { "label": 2 },
+	            "available-modulation": ["DP_QPSK_CP", "DP_QPSK_I", "DP_8QAM_CP", "DP_8QAM_I", "DP_16QAM_CP", "DP_16QAM_I", "DC_DP_16QAM"],
+				"modulation-type": "DP_QPSK_I",
+	            "available-FEC": ["_15_SD", "_15_OV", "_25"],
+	            "FEC-enabled": true,
+	            "FEC-type": "_15_SD"
+	          },{
+	            "name": "network_line_3",
+	            "port-number": 3,
+	            "input-port": false,
+	            "output-port": true,
+	            "description": "network 3",
+	            "type": "NETWORK_INTERFACE",
+	            "network-interface": { "label": 3 },
+	            "available-modulation": ["DP_QPSK_CP", "DP_QPSK_I", "DP_8QAM_CP", "DP_8QAM_I", "DP_16QAM_CP", "DP_16QAM_I", "DC_DP_16QAM"],
+				"modulation-type": "DP_QPSK_I",
+	            "available-FEC": ["_15_SD", "_15_OV", "_25"],
+	            "FEC-enabled": true,
+	            "FEC-type": "_15_SD"
+	          }
+	          ],
+	          "connections": [
+	          {
+	            "input-port-id": 2,
+	            "output-port-id": 0
+	          },{
+	            "input-port-id": 3,
+	            "output-port-id": 0
+	          }
+	      	]
+	       }
+      	}
+       ],
+        "link": [
+        {
+	        "source": {
+	          "source-node": "192.168.101.100:24000",
+	          "source-tp": "network_line_0"
+	        },
+	         "destination": {
+	          "dest-node": "10.0.0.1",
+	          "dest-tp": "network_line_0"
+	        },
+	        "link-id": "192.168.101.100:240000:N0-10.0.0.1:N0",
+	        "link-config": {
+	          "available-label-flexi-grid": null,
+	          "N-max": 100 ,
+	          "base-frequency":  193.1,
+	          "nominal-central-frequency-granularity": 6.25,
+	          "slot-width-granularity": 12.5
+	        }
+       	},{
+	        "source": {
+	          "source-node": "10.0.0.1",
+	          "source-tp": "network_line_1"
+	        },
+	        "destination": {
+	          "dest-node": "10.0.0.2",
+	          "dest-tp": "network_line_0"
+	        },
+	        "link-id": "10.0.0.1:N1-10.0.0.2:N0",
+	        "link-config": {
+	          "available-label-flexi-grid": null,
+	          "N-max": "100",
+	          "base-frequency": 193.1,
+	          "nominal-central-frequency-granularity": 6.25,
+	          "slot-width-granularity": 12.5
+	        }
+        },{
+	        "source": {
+	          "source-node": "10.0.0.2",
+	          "source-tp": "network_line_1"
+	        },
+	        "destination": {
+	          "dest-node": "192.168.101.101:24000",
+	          "dest-tp": "network_line_0"
+	        },
+	        "link-id": "10.0.0.2:N1-192.168.101.101:24000:N0",
+	        "link-config": {
+	          "available-label-flexi-grid": null,
+	          "N-max": "100",
+	          "base-frequency": 193.1,
+	          "nominal-central-frequency-granularity": 6.25,
+	          "slot-width-granularity": 12.5
+	        }
+        },{
+	        "source": {
+	          "source-node": "192.168.101.100:24000",
+	          "source-tp": "network_line_1"
+	        },
+	        "destination": {
+	          "dest-node": "10.0.0.3",
+	          "dest-tp": "network_line_0"
+	        },
+	        "link-id": "192.168.101.100:24000:N1-10.0.0.3:N0",
+	        "link-config": {
+	          "available-label-flexi-grid": null,
+	          "N-max": "100",
+	          "base-frequency": 193.1,
+	          "nominal-central-frequency-granularity": 6.25,
+	          "slot-width-granularity": 12.5
+	        }
+        },{
+	        "source": {
+	          "source-node": "10.0.0.3",
+	          "source-tp": "network_line_1"
+	        },
+	        "destination": {
+	          "dest-node": "192.168.101.101:24000",
+	          "dest-tp": "network_line_1"
+	        },
+	        "link-id": "10.0.0.2:N1-192.168.101.101:24000:N1",
+	        "link-config": {
+	          "available-label-flexi-grid": null,
+	          "N-max": "100",
+	          "base-frequency": 193.1,
+	          "nominal-central-frequency-granularity": 6.25,
+	          "slot-width-granularity": 12.5
+	        }
+        }
+      ]
+    }
+    ]
+}
+
+
+

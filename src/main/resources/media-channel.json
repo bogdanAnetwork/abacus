@@ -1,0 +1,58 @@
+{
+    "media-channels": {
+      "media-channel": [{
+        "channel-id": "chan_1",
+        "media-channel-source": {
+          "source-node": "...",
+          "source-interface": "client_0"
+        },
+        "media-channel-destination": {
+          "destination-node": "...",
+          "destination-interface": "client_0"
+        },
+        "effective-freq-slot": {
+          "N": 51,
+          "M": 1
+        },
+        "link-channel": [{
+          "link-id": "...",
+          "N": 51,
+          "M": 1,
+          "source-node": "...",
+          "source-port": 0,
+          "destination-node": "...",
+          "destination-port": 0,
+          "link": "...",
+          "bidirectional": true
+        }]
+      }]
+    },
+    "light-path-channels": {
+      "light-path-channel": {
+        "lp-channel-id": "def_config",
+        "light-path-source": {
+          "source-node": "def_config",
+          "source-interface": "def_config "
+        },
+        "light-path-destination": {
+          "destination-node": "def_config",
+          "destination-interface": "def_config "
+        },
+        "effective-freq-slot": {
+          "N": "def_config",
+          "M": "def_config "
+        },
+        "link-channel": {
+          "link-id": "def_config",
+          "N": "def_config",
+          "M": "def_config",
+          "source-node": "def_config",
+          "source-port": "def_config",
+          "destination-node": "def_config",
+          "destination-port": "def_config",
+          "link": "def_config",
+          "bidirectional": "def_config "
+        }
+      }
+    }
+}

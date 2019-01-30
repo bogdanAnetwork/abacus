@@ -1,0 +1,16 @@
+[
+	{
+		"name": "Pair1",
+		"EastNodeID": "10.249.128.27",
+		"WestNodeID": "10.249.128.91",
+		"EastTrsPortID": "10.249.128.27.34111.N0",
+		"WestTrsPortID": "10.249.128.91.34111.N0"
+	},
+	{
+		"name": "Pair2",
+		"EastNodeID": "10.249.128.27",
+		"WestNodeID": "10.249.128.91",
+		"EastTrsPortID": "10.249.128.27.34111.N1",
+		"WestTrsPortID": "10.249.128.91.34111.N1"
+	}
+]
